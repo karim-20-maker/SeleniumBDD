@@ -47,6 +47,8 @@ public class SubscriptionPage extends BasePage {
     public void validateSubscriptionPage(){
         waitUntilElementIsVisabile(title);
         Assert.assertTrue(Driver.findElement(title).isDisplayed());
+
+
     }
     /**
      * This method is to click on an element

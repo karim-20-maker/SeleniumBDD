@@ -14,6 +14,7 @@ public class Hooks extends BasePage {
         Driver.manage().window().maximize();
         return Driver;
 
+
     }
 
     @After

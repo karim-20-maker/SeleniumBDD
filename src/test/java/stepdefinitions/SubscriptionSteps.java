@@ -37,11 +37,6 @@ public class SubscriptionSteps extends BasePage {
 
 
 
-//    @And("the packages contain valid Type & Price and {string}")
-//    public void thePackagesContainValidTypePriceAnd(String currency) {
-//        subscriptionPage.validateCurrency(currency);
-//    }
-
     @And("the packages contain valid Type & Price and {string} currency")
     public void thePackagesContainValidTypePriceAndCurrncy(String cuntry) {
         subscriptionPage.validateCurrency(cuntry);
