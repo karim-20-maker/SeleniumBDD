@@ -3,7 +3,7 @@
 
 # cucumber script to implement the 3 amigos BDD concept  
 # a)-  visit :https://subscribe.jawwy.tv/ae-en
-# b)-  select according to provided country will select locator
+# b)-  according to provided country will select its locator
 # c)-  and will validate the currency too 
 
 
