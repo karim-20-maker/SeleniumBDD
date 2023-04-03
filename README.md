@@ -1,7 +1,7 @@
 # jawwy
 # Subscription
 
-# BDD script to implement the 3 amigos concept while select different subscriptions 
+# cucumber script to implement the 3 amigos BDD concept  
 # a)-  visit :https://subscribe.jawwy.tv/ae-en
 # b)-  select according to provided country will select locator
 # c)-  and will validate the currency too 
