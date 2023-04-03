@@ -20,7 +20,7 @@ c) and will validate the currency too
 
   } 
    
-   * * we can run the Script by running the runer class or the feature itself  
+   * we can run the Script by running the runer class or the feature itself  
    
    * we can run the Script for  Firfox browser from CMD using ==== >  mvn test -Dbrowser=firefox
    
