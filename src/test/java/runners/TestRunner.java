@@ -11,9 +11,10 @@ import org.junit.runner.RunWith;
 
 @CucumberOptions(
         features = {"src/test/resources/features/SubscriptionPackages.feature"},
-        glue  = {"hooks","pages","stepdefinitions"},
+        glue  = {"common","pages","stepdefinitions"},
         plugin = {"pretty", "html:target/cucumber-reports"},
-        tags = "@Test"
+        tags = "@Test",
+        publish = true
        )
 public class TestRunner {
 

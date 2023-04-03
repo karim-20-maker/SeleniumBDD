@@ -1,6 +1,7 @@
 Feature: Subscription Packages
 
- @Test
+
+  @Test
   Scenario Outline: Validate Subscription Packages for all Countries
     Given the user is on the subscription page
     When the user selects the country "<country>"

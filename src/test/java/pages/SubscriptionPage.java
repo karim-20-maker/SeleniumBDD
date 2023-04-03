@@ -1,11 +1,8 @@
 package pages;
 
-import hooks.BasePage;
+import common.BasePage;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
 public class SubscriptionPage extends BasePage {
@@ -16,15 +13,8 @@ public class SubscriptionPage extends BasePage {
         this.Driver = Driver;
     }
 
-   public  By chevronArrow =By.id("country-btn");
-   public  By logo = By.id("jawwy-logo-web");
-   public  By costlocator = By.xpath("//div[contains(@class, 'trial-cost') and text() = 'week']");
-
-   public By title = By.xpath("//h4[normalize-space()='CLASSIC']");
-
-    // methods
-
     public void navigateToSelectCountry() {
+
         click(Driver.findElement(chevronArrow));
     }
 
@@ -47,26 +37,12 @@ public class SubscriptionPage extends BasePage {
     public void validateSubscriptionPage(){
         waitUntilElementIsVisabile(title);
         Assert.assertTrue(Driver.findElement(title).isDisplayed());
+        Assert.assertTrue(Driver.findElement(lite).isDisplayed());
+        Assert.assertTrue(Driver.findElement(premium).isDisplayed());
 
 
     }
-    /**
-     * This method is to click on an element
-     * @param element to be clicked
-     */
-    public void click(WebElement element) {
-        element.click();
-    }
 
-
-    /**
-     * This method is to explicitly wait for an element to be visible
-     * @param by locator of the element that we're waiting to be visible
-     */
-    public void waitUntilElementIsVisabile(By by) {
-        WebDriverWait wait = new WebDriverWait(Driver,20);
-        wait.until(ExpectedConditions.visibilityOfElementLocated(by));
-    }
     public String MapCountry(String country){
         String countryStr;
         switch (country) {
