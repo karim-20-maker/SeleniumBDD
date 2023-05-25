@@ -39,6 +39,7 @@ public class SubscriptionPage extends BasePage {
         Assert.assertTrue(Driver.findElement(title).isDisplayed());
         Assert.assertTrue(Driver.findElement(lite).isDisplayed());
         Assert.assertTrue(Driver.findElement(premium).isDisplayed());
+        System.out.println("messi");
 
 
     }
